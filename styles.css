@@ -1,76 +1,72 @@
+/* General styling */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light-colored background for content */
+    margin: 0;
+    padding: 0;
 }
 
+/* Header styling */
 header {
-    background-image: url('bckgrnd_Cabsl.png');
+    background-image: url('bckgrnd_Cabsl.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    text-align: center;
     color: #fff;
 }
 
-.logo-container {
-    position: relative;
+.header-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logo {
-    height: 100px;
-    margin-right: 20px;
+    height: 60px;
 }
 
 .company-name {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 24px;
-    color: #fff;
+    margin-left: 20px;
 }
 
-nav {
-    margin-top: 20px;
+.navigation {
+    display: flex;
+    gap: 15px;
 }
 
-nav a {
+.navigation a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-nav a:hover {
+.navigation a:hover {
     text-decoration: underline;
 }
 
+/* Main content styling */
 main {
     padding: 20px;
-    background-color: #fafafa; /* Light-colored background for main content */
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4; /* Light background color for content */
 }
 
-h2 {
-    color: #333;
+.welcome-section, .services-overview, .client-focus-section {
+    margin-bottom: 20px;
 }
 
-p {
-    color: #555;
-    line-height: 1.6;
+.images-section {
+    text-align: center;
 }
 
-ul {
-    color: #555;
-    line-height: 1.6;
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-ul li {
-    margin-bottom: 10px;
+.images-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
