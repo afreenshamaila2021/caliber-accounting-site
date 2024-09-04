@@ -36,13 +36,14 @@ header {
 }
 
 .logo {
-    height: 80px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
 }
 
 .company-name {
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: 30px; /* Adjust font size as needed */
     margin-left: 20px;
     font-weight: bold;
+    color: #ffffff; /* Dark color for company name */
 }
 
 .navigation {
@@ -50,7 +51,7 @@ header {
 }
 
 .navigation a {
-    color: #ffffff; /* Dark blue color for navigation */
+    color: #003366; /* Dark blue color for navigation */
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
@@ -65,13 +66,88 @@ main {
     background-color: #f4f4f4; /* Light colored background */
 }
 
-/* Additional styles for sections */
-.welcome-section, .images-section {
-    margin-bottom: 20px;
+/* Styles for index page images */
+.images-section {
+    margin-top: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .images-container img {
-    max-width: 100%;
+    max-width: 30%; /* Adjust the size as needed */
     height: auto;
-    margin: 10px 0;
+    margin: 10px;
+    display: inline-block; /* Keeps images in a line */
+}
+
+/* Specific styles for each page */
+section {
+    margin-bottom: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    color: #555555;
+}
+
+.services-section {
+    padding: 20px;
+}
+
+.services-section h2 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.services-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-section li {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    padding: 20px;
+}
+
+.contact-section h2 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555555;
+}
+
+.contact-section .address, .contact-section .phone, .contact-section .email {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    background-color: #003366; /* Dark blue background for footer */
+    color: #ffffff; /* White text color */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
