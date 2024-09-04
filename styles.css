@@ -12,13 +12,16 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    color: #fff;
+    color: #fff; /* Default text color */
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .logo {
@@ -28,21 +31,28 @@ header {
 .company-name {
     font-size: 24px;
     margin-left: 20px;
+    flex: 1;
+    color: #fff; /* Dark text color */
 }
 
 .navigation {
     display: flex;
     gap: 15px;
+    margin-left: auto;
 }
 
 .navigation a {
-    color: #fff;
+    color: #fff; /* Dark blue color for buttons */
     text-decoration: none;
     font-size: 16px;
+    padding: 10px;
+    background-color: #003366; /* Dark blue background */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .navigation a:hover {
-    text-decoration: underline;
+    background-color: #002244; /* Slightly darker blue on hover */
 }
 
 /* Main content styling */
