@@ -25,27 +25,25 @@ header {
 }
 
 .logo {
-    height: 60px;
+    height: 80px; /* Increase logo size */
 }
 
 .company-name {
-    font-size: 24px;
+    font-size: 28px; /* Adjust font size if needed */
     margin-left: 20px;
-    flex: 1;
     color: #fff; /* Dark text color */
 }
 
 .navigation {
     display: flex;
-    gap: 15px;
-    margin-left: auto;
+    gap: 10px; /* Reduce gap between buttons */
 }
 
 .navigation a {
     color: #fff; /* Dark blue color for buttons */
     text-decoration: none;
-    font-size: 16px;
-    padding: 10px;
+    font-size: 14px; /* Reduce font size */
+    padding: 8px 12px; /* Adjust padding for smaller buttons */
     background-color: #003366; /* Dark blue background */
     border-radius: 5px;
     transition: background-color 0.3s ease;
