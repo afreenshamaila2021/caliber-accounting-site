@@ -1,36 +1,76 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light-colored background for content */
 }
 
 header {
-    background-color: #007bff;
-    color: white;
+    background-image: url('bckgrnd_Cabsl.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
     text-align: center;
-    padding: 20px;
+    color: #fff;
 }
 
-h1 {
-    font-size: 2.5rem;
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-section {
-    margin: 20px auto;
+.logo {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.company-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fff;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
     padding: 20px;
-    background-color: white;
-    max-width: 900px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fafafa; /* Light-colored background for main content */
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #007bff;
+    color: #333;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+ul li {
+    margin-bottom: 10px;
 }
