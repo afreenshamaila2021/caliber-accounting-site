@@ -1,90 +1,69 @@
-/* General settings */
-body {
-    background-color: #F1F1F1; /* Light silver background */
-    color: #333333; /* Dark text for readability */
-    font-family: Arial, sans-serif;
-}
-
-/* Header section */
+/* Smaller Header */
 header {
-    background-color: #001F3F; /* Dark blue for the header */
-    color: #FFFFFF; /* White text for header */
-    padding: 20px 0;
-}
-
-/* Navigation menu */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #FFFFFF; /* White navigation links */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #C0C0C0; /* Light silver hover effect */
-}
-
-/* Company name */
-header h1 {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 2.5em;
-    color: #FFFFFF; /* White company name */
-}
-
-/* Main content area */
-.main-content {
-    background-color: #F1F1F1; /* Light silver background */
-    padding: 40px;
-    color: #333333; /* Darker text */
-}
-
-/* Buttons and links */
-button, a.button {
-    background-color: #001F3F; /* Dark blue buttons */
-    color: #FFFFFF; /* White text */
+    background-image: url('bckgrnd_Cabsl');
+    background-size: cover;
+    height: 80px; /* Decreased the header height */
     padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
-button:hover, a.button:hover {
-    background-color: #C0C0C0; /* Light silver hover */
+/* Company Logo and Name */
+#logo {
+    height: 60px; /* Adjust logo size */
+    width: auto;
+    margin-right: 10px;
+}
+
+#company-name {
+    font-size: 28px; /* Adjust font size */
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Navigation Button Styles */
+nav {
+    position: absolute;
+    top: 80px; /* Below the header */
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: lightgrey;
+    color: darkblue;
+    border-color: darkblue;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: #f5f5f5; /* Light silver background */
 }
 
 /* Footer */
 footer {
-    background-color: #001F3F; /* Dark blue for footer */
-    color: #FFFFFF;
+    background-color: darkblue;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-}
-
-/* Adjustments for images */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Fade background image in header */
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    padding: 10px 0;
+    position: relative;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fading effect */
-    z-index: -1;
+    width: 100%;
 }
