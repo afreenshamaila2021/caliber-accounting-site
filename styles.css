@@ -1,153 +1,90 @@
-/* General styles */
+/* General settings */
 body {
-    margin: 0;
+    background-color: #F1F1F1; /* Light silver background */
+    color: #333333; /* Dark text for readability */
     font-family: Arial, sans-serif;
 }
 
+/* Header section */
 header {
-    position: relative;
-    width: 100%;
-    height: 200px; /* Adjust height as needed */
-    background-image: url('bckgrnd_Cabsl.jpg'); /* Your background image */
-    background-size: cover;
-    background-position: center;
+    background-color: #001F3F; /* Dark blue for the header */
+    color: #FFFFFF; /* White text for header */
+    padding: 20px 0;
 }
 
-/* Overlay effect */
-.header-overlay {
+/* Navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White navigation links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #C0C0C0; /* Light silver hover effect */
+}
+
+/* Company name */
+header h1 {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 2.5em;
+    color: #FFFFFF; /* White company name */
+}
+
+/* Main content area */
+.main-content {
+    background-color: #F1F1F1; /* Light silver background */
+    padding: 40px;
+    color: #333333; /* Darker text */
+}
+
+/* Buttons and links */
+button, a.button {
+    background-color: #001F3F; /* Dark blue buttons */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+button:hover, a.button:hover {
+    background-color: #C0C0C0; /* Light silver hover */
+}
+
+/* Footer */
+footer {
+    background-color: #001F3F; /* Dark blue for footer */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Adjustments for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Fade background image in header */
+header::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay with 40% opacity */
-}
-
-/* Header content styling */
-.header-container {
-    position: relative;
-    z-index: 1;
-    color: #ffffff; /* Text color for better readability */
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.logo {
-    height: 100px; /* Adjust size as needed */
-}
-
-.company-name {
-    font-size: 30px; /* Adjust font size as needed */
-    margin-left: 20px;
-    font-weight: bold;
-    color: #ffffff; /* Dark color for company name */
-}
-
-.navigation {
-    margin-left: auto;
-}
-
-.navigation a {
-    color: #003366; /* Dark blue color for navigation */
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.navigation a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    background-color: #f4f4f4; /* Light colored background */
-}
-
-/* Styles for index page images */
-.images-section {
-    margin-top: 20px;
-}
-
-.images-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.images-container img {
-    max-width: 30%; /* Adjust the size as needed */
-    height: auto;
-    margin: 10px;
-    display: inline-block; /* Keeps images in a line */
-}
-
-/* Specific styles for each page */
-section {
-    margin-bottom: 20px;
-}
-
-.welcome-section h1 {
-    font-size: 24px;
-    color: #333333;
-}
-
-.welcome-section p {
-    font-size: 16px;
-    color: #555555;
-}
-
-.services-section {
-    padding: 20px;
-}
-
-.services-section h2 {
-    font-size: 20px;
-    color: #333333;
-}
-
-.services-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.services-section li {
-    font-size: 16px;
-    color: #555555;
-    margin-bottom: 10px;
-}
-
-.contact-section {
-    padding: 20px;
-}
-
-.contact-section h2 {
-    font-size: 20px;
-    color: #333333;
-}
-
-.contact-section p {
-    font-size: 16px;
-    color: #555555;
-}
-
-.contact-section .address, .contact-section .phone, .contact-section .email {
-    font-size: 16px;
-    color: #555555;
-    margin-bottom: 10px;
-}
-
-/* Footer styling */
-footer {
-    padding: 20px;
-    background-color: #003366; /* Dark blue background for footer */
-    color: #ffffff; /* White text color */
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fading effect */
+    z-index: -1;
 }
