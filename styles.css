@@ -1,52 +1,69 @@
 /* Styling for the header */
 header {
-    background-image: url('bckgrnd_Cabsl.jpg');
+    background-image: url('bckgrnd_Cabsl1.jpg');
     background-size: cover;
     background-position: center;
     padding: 20px;
     text-align: left;
     position: relative;
-    opacity: 0.8; /* To make the image a bit faded */
 }
 
+/* Styling for logo and company name */
 #logo-container {
     display: flex;
     align-items: center;
 }
 
 #logo {
-    width: 100px; /* Adjust the logo size */
+    width: 80px;
     height: auto;
     margin-right: 15px;
 }
 
 #company-name {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     color: #003366; /* Dark Blue Color */
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Add shadow for better readability */
-    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background behind text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding shadow for better visibility */
 }
 
+/* Navigation buttons below the header */
 nav {
     text-align: right;
-    margin-top: 10px;
-    position: absolute;
-    top: 60px;
-    right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 nav a {
     margin: 0 10px;
     padding: 10px 15px;
     text-decoration: none;
-    color: #003366; /* Dark Blue Color */
-    border: 2px solid #003366;
+    color: #ffffff;
+    background-color: #003366; /* Dark Blue Color for buttons */
+    border: none;
     border-radius: 5px;
-    background-color: #f0f0f0;
 }
 
 nav a:hover {
-    background-color: #003366;
+    background-color: #002244; /* Darker shade on hover */
     color: #ffffff;
+}
+
+/* Styling for the footer */
+footer {
+    background-color: #003366; /* Blue background for the footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
