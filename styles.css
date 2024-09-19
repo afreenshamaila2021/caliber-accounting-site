@@ -111,7 +111,7 @@ footer p {
 .carousel {
     position: relative;
     width: 100%; /* Full width of the parent container */
-    overflow: hidden;
+    overflow: hidden; /* Hide overflow to prevent images from going out */
 }
 
 /* Container for images */
@@ -124,9 +124,9 @@ footer p {
 /* Styling for carousel images */
 .carousel-img {
     width: 100vw; /* Full viewport width for each image */
-    height: 400px; /* Adjust the height as needed */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
     object-fit: cover; /* Cover the container without stretching */
-    flex: 0 0 100%; /* Ensure each image takes up the full width */
+    flex: 0 0 100%; /* Ensure each image takes up the full width of the viewport */
 }
 
 
