@@ -112,7 +112,6 @@ footer p {
     position: relative;
     width: 100vw; /* Full viewport width */
     overflow: hidden; /* Hide overflow to prevent images from going out */
-    margin: 0 auto; /* Center align the carousel */
 }
 
 /* Container for images */
@@ -131,11 +130,6 @@ footer p {
 
 /* Optional: Add a border to see the extent of the carousel */
 .carousel {
-    border: 2px solid red; /* Visual aid for debugging */
+    border: 0; /* Remove the red border */
 }
-
-
-
-
-
 
