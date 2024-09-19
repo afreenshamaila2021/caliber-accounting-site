@@ -2,11 +2,11 @@
 header {
     background-image: url('bckgrnd_Cabsl');
     background-size: cover;
-    height: 80px; /* Decreased the header height */
+    height: 80px; /* Keeping the header height */
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; /* Align logo and name to the left */
     position: relative;
 }
 
