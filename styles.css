@@ -111,8 +111,8 @@ footer p {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 400px; /* Adjust width as needed */
-    margin: 10px auto;
+    max-width: 500px; /* Adjust width as needed for smaller images */
+    margin: 20px auto;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -128,18 +128,10 @@ footer p {
 /* Styling for carousel images */
 .carousel-img {
     width: 100%;
-    height: auto;
+    height: auto; /* Ensure images maintain aspect ratio */
     flex-shrink: 0;
     object-fit: cover; /* Ensure images cover the container without stretching */
 }
 
-}
-
-/* Styling for carousel images */
-.carousel-img {
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
-}
 
 
