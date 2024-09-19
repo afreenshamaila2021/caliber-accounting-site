@@ -111,7 +111,7 @@ footer p {
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 500px; /* Adjust width as needed for smaller images */
+    max-width: 300px; /* Adjust width as needed for smaller images */
     margin: 20px auto;
     overflow: hidden;
     border-radius: 5px;
