@@ -82,3 +82,28 @@ footer p {
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* General styling for service sections */
+.service {
+    margin-bottom: 30px;
+}
+
+.service h2 {
+    font-size: 24px;
+    color: #003366; /* Dark Blue Color */
+}
+
+.service p {
+    font-size: 16px;
+    color: #333; /* Dark Gray Color for text */
+}
+
+.service-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
