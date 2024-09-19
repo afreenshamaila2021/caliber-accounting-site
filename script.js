@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function showNextImage() {
         currentIndex = (currentIndex + 1) % images.length;
-        const offset = -currentIndex * 100;
+        const offset = -currentIndex * 100; // 100vw for each image
         carouselImages.style.transform = `translateX(${offset}vw)`;
     }
 
