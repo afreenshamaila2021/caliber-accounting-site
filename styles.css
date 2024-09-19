@@ -32,10 +32,10 @@ header {
 
 /* Navigation buttons below the header */
 nav {
-    text-align: right;
-    position: absolute;
-    right: 20px;
-    bottom: -35px; /* Positioning buttons below the header */
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px; /* Adjust space between header and nav */
+    margin-right: 20px; /* Right margin to give some space from the edge */
 }
 
 nav a {
