@@ -107,30 +107,28 @@ footer p {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Carousel container styling */
+/* Full-width Carousel container styling */
 .carousel {
     position: relative;
-    width: 100%;
-    max-width: 300px; /* Adjust width as needed for smaller images */
-    margin: 20px auto;
+    width: 100vw; /* Full viewport width */
     overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Space above and below the carousel */
 }
 
 /* Container for images */
 .carousel-images {
     display: flex;
-    transition: transform 1s ease-in-out;
     width: 300%; /* Total width to accommodate all images */
+    transition: transform 1s ease-in-out;
 }
 
 /* Styling for carousel images */
 .carousel-img {
-    width: 100%;
-    height: auto; /* Ensure images maintain aspect ratio */
-    flex-shrink: 0;
-    object-fit: cover; /* Ensure images cover the container without stretching */
+    width: 100vw; /* Full viewport width for each image */
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Cover the container without stretching */
+}
+
 }
 
 
