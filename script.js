@@ -1,13 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const carouselImages = document.querySelector('.carousel-images');
-    const images = document.querySelectorAll('.carousel-img');
-    let currentIndex = 0;
+// script.js
 
-    function showNextImage() {
-        currentIndex = (currentIndex + 1) % images.length;
-        const offset = -currentIndex * 100; // 100vw for each image
-        carouselImages.style.transform = `translateX(${offset}vw)`;
-    }
+let currentIndex = 0;
 
-    setInterval(showNextImage, 3000); // Change image every 3 seconds
-});
+function showNextImage() {
+    const images = document.querySelector('.carousel-images');
+    const totalImages = document.querySelectorAll('.carousel-img').length;
+    currentIndex = (currentIndex + 1) % totalImages;
+    const offset = -currentIndex * 100; // Move left by 100% for each image
+    images.style.transform = `translateX(${offset}vw)`;
+}
+
+// Change image every 3 seconds
+setInterval(showNextImage, 3000);
