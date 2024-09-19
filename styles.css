@@ -1,12 +1,12 @@
-/* Smaller Header */
+/* Header */
 header {
     background-image: url('bckgrnd_Cabsl');
     background-size: cover;
-    height: 80px; /* Keeping the header height */
+    height: 80px; /* Keep the header height */
     padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align logo and name to the left */
+    justify-content: flex-start; /* Align logo and company name to the left */
     position: relative;
 }
 
@@ -14,7 +14,7 @@ header {
 #logo {
     height: 60px; /* Adjust logo size */
     width: auto;
-    margin-right: 10px;
+    margin-right: 15px; /* Space between logo and company name */
 }
 
 #company-name {
