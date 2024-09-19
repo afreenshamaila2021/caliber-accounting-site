@@ -112,12 +112,13 @@ footer p {
     position: relative;
     width: 100vw; /* Full viewport width */
     overflow: hidden; /* Hide overflow to prevent images from going out */
+    margin: 0 auto; /* Center align the carousel */
 }
 
 /* Container for images */
 .carousel-images {
     display: flex;
-    width: 300vw; /* Adjust based on number of images, e.g., 3 images = 300% width */
+    width: 300%; /* Adjust based on number of images, e.g., 3 images = 300% width */
     transition: transform 1s ease-in-out; /* Smooth transition effect */
 }
 
@@ -126,6 +127,11 @@ footer p {
     width: 100vw; /* Each image takes the full width of the viewport */
     height: auto; /* Maintain aspect ratio */
     flex: 0 0 100%; /* Each image occupies 100% of the container's width */
+}
+
+/* Optional: Add a border to see the extent of the carousel */
+.carousel {
+    border: 2px solid red; /* Visual aid for debugging */
 }
 
 
