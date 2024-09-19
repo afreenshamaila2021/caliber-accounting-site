@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function showNextImage() {
         currentIndex = (currentIndex + 1) % images.length;
         const offset = -currentIndex * 100;
-        carouselImages.style.transform = `translateX(${offset}%)`;
+        carouselImages.style.transform = `translateX(${offset}vw)`;
     }
 
     setInterval(showNextImage, 3000); // Change image every 3 seconds
