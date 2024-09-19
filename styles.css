@@ -110,8 +110,9 @@ footer p {
 /* Full-width Carousel container styling */
 .carousel {
     position: relative;
-    width: 100vw; /* Full viewport width */
+    width: 100%; /* Full width of the parent container */
     overflow: hidden; /* Hide overflow to prevent images from going out */
+    border: 2px solid red; /* Border for debugging purposes, remove or adjust as needed */
 }
 
 /* Container for images */
@@ -126,4 +127,6 @@ footer p {
     width: 100vw; /* Each image takes the full width of the viewport */
     height: auto; /* Maintain aspect ratio */
     flex: 0 0 100%; /* Each image occupies 100% of the container's width */
+    object-fit: cover; /* Ensure images cover the container area */
 }
+
