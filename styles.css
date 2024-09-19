@@ -110,23 +110,22 @@ footer p {
 /* Full-width Carousel container styling */
 .carousel {
     position: relative;
-    width: 100%; /* Full width of the parent container */
+    width: 100vw; /* Full viewport width */
     overflow: hidden; /* Hide overflow to prevent images from going out */
 }
 
 /* Container for images */
 .carousel-images {
     display: flex;
-    width: 300%; /* Adjust this width based on the number of images */
-    transition: transform 1s ease-in-out;
+    width: 300vw; /* Adjust based on number of images, e.g., 3 images = 300% width */
+    transition: transform 1s ease-in-out; /* Smooth transition effect */
 }
 
 /* Styling for carousel images */
 .carousel-img {
-    width: 100vw; /* Full viewport width for each image */
-    height: auto; /* Adjust height automatically to maintain aspect ratio */
-    object-fit: cover; /* Cover the container without stretching */
-    flex: 0 0 100%; /* Ensure each image takes up the full width of the viewport */
+    width: 100vw; /* Each image takes the full width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    flex: 0 0 100%; /* Each image occupies 100% of the container's width */
 }
 
 
