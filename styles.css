@@ -68,3 +68,17 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+
+/* Map container styling */
+#map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
