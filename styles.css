@@ -127,9 +127,3 @@ footer p {
     height: auto; /* Maintain aspect ratio */
     flex: 0 0 100%; /* Each image occupies 100% of the container's width */
 }
-
-/* Optional: Add a border to see the extent of the carousel */
-.carousel {
-    border: 0; /* Remove the red border */
-}
-
