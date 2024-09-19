@@ -107,3 +107,29 @@ footer p {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Carousel container styling */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for images */
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 300%;
+}
+
+/* Styling for carousel images */
+.carousel-img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+
