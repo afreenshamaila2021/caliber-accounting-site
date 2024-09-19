@@ -118,7 +118,7 @@ footer p {
 /* Container for images */
 .carousel-images {
     display: flex;
-    width: 300%; /* Total width to accommodate all images */
+    width: 700%; /* Total width to accommodate all images */
     transition: transform 1s ease-in-out;
 }
 
