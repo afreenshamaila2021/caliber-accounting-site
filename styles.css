@@ -1,69 +1,45 @@
-/* Header */
+/* Styling for the header */
 header {
-    background-image: url('bckgrnd_Cabsl');
+    background-image: url('bckgrnd_Cabsl.jpg');
     background-size: cover;
-    height: 80px; /* Keep the header height */
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align logo and company name to the left */
-    position: relative;
+    background-position: center;
+    padding: 20px;
+    text-align: left;
 }
 
-/* Company Logo and Name */
+#logo-container {
+    display: flex;
+    align-items: center;
+}
+
 #logo {
-    height: 60px; /* Adjust logo size */
-    width: auto;
-    margin-right: 15px; /* Space between logo and company name */
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
 }
 
 #company-name {
-    font-size: 28px; /* Adjust font size */
+    font-size: 24px;
     font-weight: bold;
-    color: white;
-    display: inline-block;
-    vertical-align: middle;
+    color: #003366; /* Dark Blue Color */
 }
 
-/* Navigation Button Styles */
 nav {
-    position: absolute;
-    top: 80px; /* Below the header */
-    right: 20px;
-    display: flex;
-    gap: 15px;
+    text-align: right;
+    margin-top: 10px;
 }
 
 nav a {
-    background-color: darkblue;
-    color: white;
+    margin: 0 10px;
     padding: 10px 15px;
-    border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
-    border: 2px solid transparent;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
+    color: #003366; /* Dark Blue Color */
+    border: 2px solid #003366;
+    border-radius: 5px;
+    background-color: #f0f0f0;
 }
 
 nav a:hover {
-    background-color: lightgrey;
-    color: darkblue;
-    border-color: darkblue;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    background-color: #f5f5f5; /* Light silver background */
-}
-
-/* Footer */
-footer {
-    background-color: darkblue;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    background-color: #003366;
+    color: #ffffff;
 }
