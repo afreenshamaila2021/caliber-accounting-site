@@ -129,4 +129,3 @@ footer p {
     flex: 0 0 100%; /* Each image occupies 100% of the container's width */
     object-fit: cover; /* Ensure images cover the container area */
 }
-
