@@ -1,9 +1,4 @@
-/* General Styles */
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+/* Global Styles */
 
 /* Styling for the header */
 header {
@@ -12,6 +7,7 @@ header {
     background-position: center;
     padding: 20px;
     text-align: left;
+    position: relative;
 }
 
 /* Styling for logo and company name */
@@ -30,16 +26,16 @@ header {
     font-size: 28px;
     font-weight: bold;
     color: #003366; /* Dark Blue Color */
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.7); /* Light background behind text */
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding shadow for better visibility */
 }
 
 /* Navigation styles */
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Align buttons to the right */
     margin-top: 10px;
     margin-right: 20px;
 }
@@ -49,44 +45,25 @@ nav a {
     padding: 10px 15px;
     text-decoration: none;
     color: #ffffff;
-    background-color: #003366;
+    background-color: #003366; /* Dark Blue Color for buttons */
     border: none;
     border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #002244;
+    background-color: #002244; /* Darker shade on hover */
+    color: #ffffff;
 }
 
-/* Index Page Specific Styles */
-.index-main {
-    display: flex;
-    align-items: center;
-}
-
-.video-container {
-    flex: 1;
-    max-width: 50%; /* Adjust the video width */
-}
-
-video {
-    width: 100%; /* Make the video fill its container */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.content-container {
-    flex: 1;
-    max-width: 50%; /* Adjust content width */
-    padding: 20px;
-    font-family: 'Arial', sans-serif; /* Change font style if needed */
-}
-
-/* Footer styles */
+/* Styling for the footer */
 footer {
-    background-color: #003366;
+    background-color: #003366; /* Dark Blue for the footer */
     color: #ffffff;
     text-align: center;
     padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
@@ -94,14 +71,58 @@ footer p {
     font-size: 14px;
 }
 
-/* Media Queries for Responsiveness */
+/* Map container styling */
+#map-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Styles for the Index Page */
+.index-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row; /* Horizontal layout for video and text */
+    padding: 20px;
+    gap: 20px; /* Space between text and video */
+}
+
+/* Index Page Text Content */
+.index-page .content {
+    flex: 1; /* Make the text content flexible */
+    font-family: 'Arial', sans-serif; /* Professional font */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Index Page Video Container */
+.index-page #video-container {
+    flex: 1; /* Make the video content flexible */
+    max-width: 100%;
+    text-align: center;
+}
+
+.index-page #video-container video {
+    width: 100%; /* Ensure video takes full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    .index-main {
-        flex-direction: column;
+    .index-page {
+        flex-direction: column; /* Stack content vertically on smaller screens */
     }
 
-    .video-container,
-    .content-container {
-        max-width: 100%; /* Full width on smaller screens */
+    .index-page #video-container {
+        width: 100%; /* Full width video for smaller screens */
     }
 }
