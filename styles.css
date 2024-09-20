@@ -179,6 +179,6 @@ footer p {
 
 @media (max-width: 768px) {
     .services-page {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
     }
 }
