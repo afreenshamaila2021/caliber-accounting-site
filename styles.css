@@ -163,5 +163,30 @@ footer p {
     transform: translate(-50%, -50%); /* Centers the video */
     object-fit: cover; /* Ensures the video covers the entire area */
 }
+/* Main content container */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Video styling */
+.video-container {
+    flex: 1;
+    margin-right: 20px; /* Space between video and text */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+/* Text content styling */
+.text-content {
+    flex: 1;
+    font-family: 'Arial', sans-serif; /* Change to a more professional font */
+    line-height: 1.5; /* Improve readability */
+}
 
 
