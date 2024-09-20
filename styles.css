@@ -116,10 +116,11 @@ footer p {
 .index-page #video-container video {
     width: 100%; /* Ensure video takes full width of container */
     height: 100%; /* Set height to fill the container */
-    object-fit: cover; /* Cover the entire container */
+    object-fit: contain; /* Contain the entire video without cropping */
     position: absolute; /* Allow positioning */
-    top: 0; /* Align to the top of the container */
-    left: 0; /* Align to the left of the container */
+    top: 50%; /* Center the video vertically */
+    left: 50%; /* Center the video horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
     border-radius: 10px;
 }
 
