@@ -138,6 +138,8 @@ footer p {
 
 /* Styling for Services Page */
 .services-page {
+    background-color: #003366; /* Dark blue background */
+    color: #ffffff; /* White text */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -145,6 +147,8 @@ footer p {
 }
 
 .services-page .service {
+    background-color: #ffffff; /* White background for service cards */
+    color: #003366; /* Dark blue text for service titles and descriptions */
     border: 1px solid #003366;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -159,9 +163,12 @@ footer p {
 }
 
 .services-page .service img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make images circular */
+    object-fit: cover; /* Ensure the image fits within the circular frame */
+    border: 3px solid #003366; /* Dark blue border around images */
+    margin-bottom: 15px;
 }
 
 .services-page .service p {
