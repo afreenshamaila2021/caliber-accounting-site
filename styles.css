@@ -1,24 +1,37 @@
-/* General styling for all pages */
-
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Adjust this to your preferred font */
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Header */
+/* Styling for the header */
 header {
-    background-image: url('bckgrnd_Cabsl1.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    text-align: left;
     position: relative;
+    overflow: hidden; /* Prevent overflow */
 }
 
-/* Logo and company name */
+/* Video container styling */
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video */
+    align-items: center; /* Center vertically */
+    width: 50%; /* Adjust as needed */
+}
+
+video {
+    width: 100%; /* Make video responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Text content styling */
+.text-content {
+    width: 50%; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Styling for logo and company name */
 #logo-container {
     display: flex;
     align-items: center;
@@ -33,19 +46,19 @@ header {
 #company-name {
     font-size: 28px;
     font-weight: bold;
-    color: #003366;
-    background-color: rgba(255, 255, 255, 0.7);
+    color: #003366; /* Dark Blue Color */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background behind text */
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding shadow for better visibility */
 }
 
-/* Navigation */
+/* Navigation buttons */
 nav {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-    margin-right: 20px;
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-top: 10px; /* Adjust space between header and nav */
+    margin-right: 20px; /* Right margin to give some space from the edge */
 }
 
 nav a {
@@ -53,44 +66,29 @@ nav a {
     padding: 10px 15px;
     text-decoration: none;
     color: #ffffff;
-    background-color: #003366;
+    background-color: #003366; /* Dark Blue Color for buttons */
     border: none;
     border-radius: 5px;
 }
 
 nav a:hover {
-    background-color: #002244;
+    background-color: #002244; /* Darker shade on hover */
+    color: #ffffff;
 }
 
-/* Main Content */
+/* Main content */
 main {
-    margin: 20px;
+    display: flex; /* For side-by-side layout */
+    justify-content: space-between; /* Space between video and text */
+    align-items: center; /* Align vertically */
 }
 
-h1 {
-    color: #003366;
-}
-
-/* Carousel section */
-#carousel-container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.carousel img {
-    width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
+/* Styling for the footer */
 footer {
-    background-color: #003366;
-    color: #fff;
+    background-color: #003366; /* Dark Blue for the footer */
+    color: #ffffff;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -115,78 +113,14 @@ footer p {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Queries */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    header {
-        height: 250px;
+    main {
+        flex-direction: column; /* Stack content on small screens */
+        align-items: flex-start; /* Align to the start */
     }
 
-    nav a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    #carousel-container img {
-        max-width: 100%;
+    .video-container, .text-content {
+        width: 100%; /* Full width on small screens */
     }
 }
-
-@media (max-width: 500px) {
-    nav {
-        text-align: center;
-        margin-top: 10px;
-    }
-
-    nav a {
-        display: block;
-        margin-bottom: 10px;
-    }
-}
-
-/* Video container styling */
-#video-container {
-    position: relative;
-    width: 100%; /* Full width */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Ensures content doesn't overflow */
-}
-
-/* Video styling */
-#video-container video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%; /* Ensures the video covers the width */
-    min-height: 100%; /* Ensures the video covers the height */
-    width: auto; /* Maintains aspect ratio */
-    height: auto; /* Maintains aspect ratio */
-    transform: translate(-50%, -50%); /* Centers the video */
-    object-fit: cover; /* Ensures the video covers the entire area */
-}
-/* Main content container */
-.content-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-/* Video styling */
-.video-container {
-    flex: 1;
-    margin-right: 20px; /* Space between video and text */
-}
-
-.video-container video {
-    width: 100%;
-    height: auto;
-}
-
-/* Text content styling */
-.text-content {
-    flex: 1;
-    font-family: 'Arial', sans-serif; /* Change to a more professional font */
-    line-height: 1.5; /* Improve readability */
-}
-
-
