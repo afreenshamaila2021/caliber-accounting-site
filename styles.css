@@ -2,7 +2,7 @@
 
 /* Styling for the header */
 header {
-    background-color: #003366; /* Dark Blue Background */
+    background-color: #003366; /* Dark Blue Color */
     padding: 20px;
     text-align: left;
     position: relative;
@@ -23,9 +23,10 @@ header {
 #company-name {
     font-size: 28px;
     font-weight: bold;
-    color: #ffffff; /* White text for contrast */
+    color: #ffffff; /* White text for better contrast on dark blue */
     padding: 5px 10px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding shadow for better visibility */
 }
 
 
