@@ -110,7 +110,31 @@ footer p {
     text-align: center;
     height: 450px; /* Set the same height as the map */
     overflow: hidden; /* Hide overflow if video exceeds the container */
+    position: relative; /* Enable positioning for child elements */
 }
+
+.index-page #video-container video {
+    width: 100%; /* Ensure video takes full width of container */
+    height: 100%; /* Set height to fill the container */
+    object-fit: cover; /* Cover the entire container */
+    position: absolute; /* Allow positioning */
+    top: 0; /* Align to the top of the container */
+    left: 0; /* Align to the left of the container */
+    border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .index-page {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .index-page #video-container {
+        width: 100%; /* Full width video for smaller screens */
+        height: 250px; /* Adjust height for smaller screens if needed */
+    }
+}
+
 
 .index-page #video-container video {
     width: 100%; /* Ensure video takes full width of container */
