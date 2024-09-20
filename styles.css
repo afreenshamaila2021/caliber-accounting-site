@@ -142,3 +142,10 @@ footer p {
         margin-bottom: 10px;
     }
 }
+
+/* Video container styling */
+#video-container {
+    max-height: 500px; /* Adjust this value as needed */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
