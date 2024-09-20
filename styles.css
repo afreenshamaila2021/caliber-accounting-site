@@ -108,11 +108,14 @@ footer p {
     flex: 1; /* Make the video content flexible */
     max-width: 100%;
     text-align: center;
+    height: 300px; /* Set a fixed height for the video container */
+    overflow: hidden; /* Hide overflow if video exceeds the container */
 }
 
 .index-page #video-container video {
     width: 100%; /* Ensure video takes full width of container */
-    height: auto; /* Maintain aspect ratio */
+    height: 100%; /* Set height to fill the container */
+    object-fit: cover; /* Ensure the video covers the container without distortion */
     border-radius: 10px;
 }
 
@@ -124,5 +127,6 @@ footer p {
 
     .index-page #video-container {
         width: 100%; /* Full width video for smaller screens */
+        height: 200px; /* Adjust height for smaller screens */
     }
 }
