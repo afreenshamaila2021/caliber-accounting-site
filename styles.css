@@ -134,23 +134,3 @@ footer p {
         height: 250px; /* Adjust height for smaller screens if needed */
     }
 }
-
-
-.index-page #video-container video {
-    width: 100%; /* Ensure video takes full width of container */
-    height: 100%; /* Set height to fill the container */
-    object-fit: cover; /* Ensure the video covers the container without distortion */
-    border-radius: 10px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .index-page {
-        flex-direction: column; /* Stack content vertically on smaller screens */
-    }
-
-    .index-page #video-container {
-        width: 100%; /* Full width video for smaller screens */
-        height: 250px; /* Adjust height for smaller screens if needed */
-    }
-}
