@@ -233,3 +233,47 @@ footer p {
 .btn-primary:hover {
     background-color: #002244;
 }
+
+/* Existing styles... */
+
+/* Add your new styles here */
+
+.about-us {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px; /* Limit image size */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 600px; /* Limit video size */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.about-us h1, .about-us h2 {
+    color: #003366; /* Dark blue for headings */
+}
+
+.about-us p, .about-us ul {
+    color: #333333; /* Dark gray for text */
+}
+
+.about-us ul {
+    list-style-type: disc; /* Bullet points for list */
+    margin-left: 20px; /* Indent list */
+}
