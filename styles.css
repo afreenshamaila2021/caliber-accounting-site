@@ -136,38 +136,11 @@ footer p {
     width: 100%;
     height: 400px; /* Adjust the height as needed */
     overflow: hidden;
+    margin-bottom: 20px; /* Add some space between the video and the rest of the content */
 }
 
 #header-video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
 }
-
-/* Keep the logo and company name overlay on the video */
-#logo-container {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-    z-index: 2; /* Ensure it shows over the video */
-}
-
-#logo {
-    width: 80px;
-    height: auto;
-    margin-right: 15px;
-}
-
-#company-name {
-    font-size: 28px;
-    font-weight: bold;
-    color: #003366;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
