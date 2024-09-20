@@ -1,64 +1,116 @@
-/* Styling for the header */
+/* General styling for all pages */
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styling for header with video */
 header {
-    background-image: url('bckgrnd_Cabsl1.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    text-align: left;
     position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height for video header */
+    overflow: hidden;
 }
 
-/* Styling for logo and company name */
-#logo-container {
-    display: flex;
-    align-items: center;
+/* Styling for the video header */
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#logo {
-    width: 80px;
-    height: auto;
-    margin-right: 15px;
+/* Ensure the video does not display white background */
+header video {
+    background-color: transparent;
 }
 
-#company-name {
-    font-size: 28px;
-    font-weight: bold;
-    color: #003366; /* Dark Blue Color */
-    background-color: rgba(255, 255, 255, 0.7); /* Light background behind text */
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adding shadow for better visibility */
-}
-
-/* Navigation buttons below the header */
+/* Navigation styling */
 nav {
-    display: flex;
-    justify-content: flex-end; /* Align buttons to the right */
-    margin-top: 10px; /* Adjust space between header and nav */
-    margin-right: 20px; /* Right margin to give some space from the edge */
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 nav a {
-    margin: 0 10px;
-    padding: 10px 15px;
+    color: white;
+    background-color: #003366;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #003366; /* Dark Blue Color for buttons */
-    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #002244; /* Darker shade on hover */
-    color: #ffffff;
+    background-color: #002244;
 }
 
-/* Styling for the footer */
-footer {
-    background-color: #003366; /* Dark Blue for the footer */
-    color: #ffffff;
+/* Main content styling */
+main {
+    margin: 20px;
+}
+
+h1 {
+    color: #003366;
+}
+
+/* Styling for images in the index page */
+.service-img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Carousel styling for index page images */
+#carousel-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact page styling */
+#contact-info {
+    margin: 20px 0;
+}
+
+#map-container {
+    margin: 20px 0;
     text-align: center;
-    padding: 15px 0;
+}
+
+#map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -69,118 +121,30 @@ footer p {
     font-size: 14px;
 }
 
-/* Map container styling */
-#map-container {
-    text-align: center;
-    margin: 20px 0;
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header {
+        height: 250px; /* Adjust video height for smaller screens */
+    }
+    
+    nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    #carousel-container img {
+        max-width: 100%;
+    }
 }
 
-#map-container iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 450px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
+@media (max-width: 500px) {
+    nav {
+        text-align: center;
+        margin-top: 10px;
+    }
 
-/* General styling for service sections */
-.service {
-    margin-bottom: 30px;
-}
-
-.service h2 {
-    font-size: 24px;
-    color: #003366; /* Dark Blue Color */
-}
-
-.service p {
-    font-size: 16px;
-    color: #333; /* Dark Gray Color for text */
-}
-
-.service-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 5px;
-    margin: 10px 0;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Full-width Carousel container styling */
-.carousel {
-    position: relative;
-    width: 100%; /* Full width of the parent container */
-    overflow: hidden; /* Hide overflow to prevent images from going out */
-    border: 2px solid red; /* Border for debugging purposes */
-}
-
-/* Container for images */
-.carousel-images {
-    display: flex;
-    width: 300%; /* Adjust based on the number of images */
-    transition: transform 1s ease-in-out; /* Smooth transition effect */
-}
-
-/* Styling for carousel images */
-.carousel-img {
-    width: 100vw; /* Each image takes the full width of the viewport */
-    height: auto; /* Maintain aspect ratio */
-    flex: 0 0 100%; /* Each image occupies 100% of the container's width */
-    object-fit: cover; /* Ensure images cover the container area */
-}
-
-/* For the video header */
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Adjust the height as needed */
-    overflow: hidden;
-    margin-bottom: 20px; /* Add some space between the video and the rest of the content */
-}
-
-#header-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Reset header background */
-header {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-/* Make the video fill the header */
-#header-video {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Remove any background image */
-body header {
-    background: none;
-}
-
-/* Ensure video fits the header space properly */
-header video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-/* Adjust margins and padding to avoid any background or gaps */
-body {
-    margin: 0;
-    padding: 0;
-}
-
-main {
-    margin-top: 20px; /* Adding margin for content after video */
+    nav a {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
