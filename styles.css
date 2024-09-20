@@ -191,12 +191,9 @@ footer p {
 
 #background-video {
     position: absolute;
-    
+    top: 0;
+    left: 0;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     height: 100%;
     object-fit: cover; /* Ensure video covers the full screen */
     z-index: -1; /* Place the video behind the content */
