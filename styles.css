@@ -199,7 +199,6 @@ footer p {
     z-index: -1; /* Place the video behind the content */
 }
 
-
 .overlay-content {
     position: absolute;
     top: 50%;
