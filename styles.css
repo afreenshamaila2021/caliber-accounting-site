@@ -108,7 +108,7 @@ footer p {
     flex: 1; /* Make the video content flexible */
     max-width: 100%;
     text-align: center;
-    height: 300px; /* Set a fixed height for the video container */
+    height: 450px; /* Set the same height as the map */
     overflow: hidden; /* Hide overflow if video exceeds the container */
 }
 
@@ -127,6 +127,6 @@ footer p {
 
     .index-page #video-container {
         width: 100%; /* Full width video for smaller screens */
-        height: 200px; /* Adjust height for smaller screens */
+        height: 250px; /* Adjust height for smaller screens if needed */
     }
 }
