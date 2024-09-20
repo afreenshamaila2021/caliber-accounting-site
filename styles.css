@@ -144,3 +144,43 @@ footer p {
     height: 100%;
     object-fit: cover;
 }
+
+/* Reset header background */
+header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/* Make the video fill the header */
+#header-video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Remove any background image */
+body header {
+    background: none;
+}
+
+/* Ensure video fits the header space properly */
+header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Adjust margins and padding to avoid any background or gaps */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-top: 20px; /* Adding margin for content after video */
+}
