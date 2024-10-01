@@ -674,80 +674,48 @@ header nav ul li a {
 }
 
 .about-section {
-    background-image: url('aboutsample.jpg'); /* Use your image file name here */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the background image */
-    padding: 50px 20px; /* Adjust padding as needed */
+    background-image: url('aboutsample.jpg'); /* Ensure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Allows for positioning of children */
+    padding: 50px 20px; /* Space around the section */
     color: white; /* Adjust text color for contrast */
-    position: relative; /* Allows for positioning of elements */
-}
-}
-
 }
 
 .about-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin: 0 auto; /* Center the about content */
-    max-width: 1200px; /* Limit the content width for better readability */
+    max-width: 800px; /* Adjust based on your design */
+    margin: 0 auto; /* Centers the container */
+    position: relative; /* Allows for absolute positioning of children */
+    z-index: 1; /* Ensures content is above the background */
 }
 
 .about-content {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    padding: 20px; /* Adjust padding for the content */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    margin: 20px 0; /* Space between each content block */
+    position: relative; /* Ensure stacking context */
+    z-index: 2; /* Ensures this content is above the background */
 }
 
-.about-content .about-image {
-    flex: 1;
-    text-align: center;
-}
-
-.about-content .about-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.about-content .about-text {
-    flex: 2;
-    padding: 20px;
-    text-align: left;
-}
-
-.about-content h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #00274d;
-    font-weight: 700;
-}
-
-.about-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    font-weight: 300;
-}
-
-/* Background Colors for Each Section */
+/* Additional styles for specific color backgrounds */
 .baby-pink {
-    background-color: #ffe6f2;
+    background-color: rgba(255, 182, 193, 0.5); /* Light baby pink */
 }
 
 .baby-blue {
-    background-color: #e6f2ff;
+    background-color: rgba(173, 216, 230, 0.5); /* Light baby blue */
 }
 
 .light-yellow {
-    background-color: #fff9e6;
+    background-color: rgba(255, 255, 224, 0.5); /* Light yellow */
 }
 
 .light-green {
-    background-color: #e6ffe6;
+    background-color: rgba(144, 238, 144, 0.5); /* Light green */
 }
+
 
 /* Footer Styles */
 footer {
