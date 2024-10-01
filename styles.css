@@ -674,8 +674,13 @@ header nav ul li a {
 }
 
 .about-section {
-    padding: 40px;
-    text-align: center;
+    background-image: url('AboutUs.jpg'); /* Use your image file name here */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    padding: 50px 20px; /* Adjust padding as needed */
+    color: white; /* Adjust text color for contrast */
+    position: relative; /* Allows for positioning of elements */
+}
 }
 
 .about-heading {
