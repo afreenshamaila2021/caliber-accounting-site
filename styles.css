@@ -332,3 +332,177 @@ footer p {
         height: 200px;
     }
 }
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* About Us Section Styles */
+.about-us h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.about-section img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.about-section .content {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  font-size: 1.8em;
+  color: #004080;
+}
+
+/* Background colors for each section */
+.section1 {
+  background-color: #fce4ec; /* Light baby pink */
+}
+
+.section2 {
+  background-color: #e3f2fd; /* Light baby blue */
+}
+
+.section3 {
+  background-color: #fff9c4; /* Light yellow */
+}
+
+.section4 {
+  background-color: #f1f8e9; /* Light greenish color */
+}
+
+/* Alternate layouts */
+.section1 img {
+  order: 1;
+}
+
+.section1 .content {
+  order: 2;
+}
+
+.section2 .content {
+  order: 1;
+}
+
+.section2 img {
+  order: 2;
+}
+
+.section3 img {
+  order: 1;
+}
+
+.section3 .content {
+  order: 2;
+}
+
+.section4 .content {
+  order: 1;
+}
+
+.section4 img {
+  order: 2;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #004080;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section img {
+    margin-bottom: 20px;
+  }
+}
